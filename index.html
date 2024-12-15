@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="nav-head">Weather App</div>
+      <ul>
+        <li><a href="/">Tomorrow</a></li>
+        <li><a href="/">Weekly Forecast</a></li>
+        <li><a href="/">About Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="search-bar">
+      <input class="input-field" type="text" id="city-value" placeholder="City name?" />
+      <button id="citySearch" class="btn-search">Search</button>
+    </div>
+
+    <div class="hero">
+      <div class="tempcol1">
+        <div id="temp">Temp:</div>
+        <div id="city_name">City name:</div>
+      </div>
+      <div class="tempcol2">
+        <div id="feels_like">Feels like:</div>
+        <div id="pressure">Pressure:</div>
+      </div>
+      <div class="tempcol3">
+        <div id="wind_speed">Wind speed:</div>
+        <div id="weather">Weather:</div>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; text-align: center">
+      <span
+        >This is a dummy project, the results may or may not be completely
+        accurate.</span
+      >
+    </div>
+    <footer style="display: flex; justify-content: center; text-align: center; bottom:0px;">
+      Made With ❤️ by Vaibhav Raj Tyagi.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

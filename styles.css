@@ -1,0 +1,127 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color:#0a0a0a;
+    color: aliceblue;
+    width: 100%;
+    font-family: 'Jetbrains Mono';
+    padding: 0.9em 0em;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+a:visited{
+    color:gray;
+}
+
+a:hover{
+color:white;
+}
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+/* Input field */
+#city-value{
+    border: none;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    appearance: none;
+    caret-color: red;
+    outline: none; 
+}
+
+/* Button */
+#citySearch{
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(37, 37, 37, 1.2);
+    color: white;
+    font-family: 'Jetbrains Mono';
+}
+
+#citySearch:hover{
+    background-color:black;
+    color: rgb(255, 255, 255);
+}
+
+.hero{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 6%;
+    border: 0.5px solid gray;
+    border-radius: 30px; 
+    height: 250px;
+    background-image: linear-gradient(to right, black, #0a0a0a);
+    backdrop-filter: blur(90px);
+    gap: 10px;
+}
+
+.tempcol1, .tempcol2, .tempcol3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    margin: 5%;
+    padding: 5%;
+}
+
+@media screen and (max-width: 450px) {
+    .hero{
+        flex-direction: column;
+        overflow: scroll;
+        border-radius: 0px;
+    }
+}
+
+/* To make the design more responsive */
+@media screen and (max-width: 450px) { 
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7.5vh;
+    background: #111;
+    text-align: center;
+}
