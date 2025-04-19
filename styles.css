@@ -125,15 +125,6 @@ color:white;
 }
 
 @media screen and (max-width: 450px) {
-    .hero{
-        flex-direction: column;
-        overflow: scroll;
-        border-radius: 0px;
-    }
-}
-
-/* To make the design more responsive */
-@media screen and (max-width: 450px) { 
     nav{
         flex-direction: column;
         gap: 20px;
@@ -143,6 +134,25 @@ color:white;
         flex-direction: column;
         gap: 20px;
     }
+   
+    .hero{
+        flex-direction: column;
+        overflow: scroll;
+        border-radius: 5px;
+        max-height: 500px;
+        margin-bottom:2.5rem; 
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .tempcol1, .tempcol2, .tempcol3{
+        gap: 55px;
+    }
+}
+
+/* To make the design more responsive */
+@media screen and (max-width: 450px) { 
+   
 }
 
 footer{
@@ -222,7 +232,8 @@ a:hover {
 
 @media screen and (max-width: 450px){
 .container{
-    margin:6rem 4rem;
+    margin:4rem 2rem;
+    padding: 1.5rem;
     flex-grow: 1;
     flex-wrap: wraps;
 }
